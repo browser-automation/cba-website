@@ -1,9 +1,25 @@
-<nav>
-  <ul>
-    <% for (const {title, link} of site.navigation) {%>
-      <li>
-        <a href="<%- link %>" target="_blank"><%- title %></a>
-      </li>
-    <% } %>
-  </ul>
+<select id="mobile-nav">
+      <% for ({title, link, sub_items} of site.navigation) { %>
+        <option value="<%- title %>"><%- title %></option>
+      <% } %>
+</select>
+
+<nav id="main-navigation">
+  <% function recNav(navig) { %>
+    <ul> 
+      <% for ({title, link, sub_items} of navig) { %>
+
+        <li>
+            <a href="<%- link %>" target="_blank"><%- title %> </a>
+              <% if (sub_items == null) {
+                continue;
+                } else { %>
+                  <img src = '../images/arrow_bullet.png'/>
+                  <%recNav(sub_items)  ; 
+                }%>       
+        </li>
+    </ul>
+      <% }
+  }
+  recNav(site.navigation) %>
 </nav>

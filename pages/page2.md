@@ -1,8 +1,8 @@
 ---
 title: Second page
-description: Get your webiste up and running online in no time using current starter
-header: CMintS starter
+description: Chromium Browser Automation (extension for chrome browser automation) 
 ---
+
 
 ## Second page
 
