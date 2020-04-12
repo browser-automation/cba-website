@@ -133,132 +133,6 @@ const templateData =
           }
         ]
       },
-
-      {
-        title: "Documentation",
-        link: "#",
-        sub_items: [
-          {
-            title: "Interface",
-            link: "",
-            sub_items: [
-              {
-                title: "Project Datagrid",
-                link: ""
-              },
-              {
-                title: "Actions Datagrid",
-                link: ""
-              },
-              {
-                title: "Functions Datagrid",
-                link: ""
-              }
-            ]
-          },
-          {
-            title: "Actions",
-            link: "",
-            sub_items: [
-              {
-                title: "inject",
-                link: ""
-              },
-              {
-                title: "inject-cs",
-                link: ""
-              },
-              {
-                title: "bg-inject",
-                link: ""
-              },
-              {
-                title: "bg-function (deprecated)",
-                link: ""
-              },
-              {
-                title: "change",
-                link: ""
-              },
-              {
-                title: "check",
-                link: ""
-              },
-              {
-                title: "click",
-                link: ""
-              },
-              {
-                title: "submit-click",
-                link: ""
-              },
-              {
-                title: "update",
-                link: ""
-              },
-              {
-                title: "timer",
-                link: ""
-              },
-              {
-                title: "redirect",
-                link: ""
-              },
-              {
-                title: "copy",
-                link: ""
-              },
-              {
-                title: "pause",
-                link: ""
-              },
-
-            ]
-          },
-          {
-            title: "Functions",
-            link: "",
-            sub_items: [
-              {
-                title: "clear cookies",
-                link: ""
-              },
-            ]
-          },
-          {
-            title: "Recording",
-            link: ""
-          },
-          {
-            title: "Play",
-            link: ""
-          },
-          {
-            title: "Clipboard",
-            link: ""
-          },
-          {
-            title: "Options",
-            link: "",
-            sub_items: [
-              {
-                title: "CBA",
-                link: ""
-              },
-              {
-                title: "Functions Option",
-                link: ""
-              },
-              {
-                title: "Import-Export",
-                link: ""
-              },
-
-            ]
-          }
-        ]
-      },
-
       {
         title: "Tutorial",
         link: "#",
@@ -290,7 +164,30 @@ const templateData =
             link: ""
           }
         ]
+        },
+        {
+
+        title: "What's New",
+        link:"",
+        sub_items:[
+                  {
+                    title: "Version 8.0",
+                    link:"",
+                    sub_items:[]
+                  },
+                  {
+                    title: "Version 6.0",
+                    link:"",
+                    sub_items:[]
+                  },
+                  {
+                    title: "Version 5.0",
+                    link:"",
+                    sub_items:[]
+                  }
+        ]
       }
+       
     ]
   }
 };
