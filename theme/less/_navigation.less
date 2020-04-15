@@ -7,22 +7,37 @@
 
 #main-navigation > ul
 {
-  height:50px;
+  //height: 50px;
   display: flex;
   padding: 0;
-  border-color: #EAEAEA;
+  border: #F5F5F5 solid  1px;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #main-navigation > ul li
-{
-  padding: 15px;
+{ 
+  display: flex;
+  justify-content:space-between;
   position: relative;
   list-style: none;
-  border-right: 1px solid #e3e3e3;    
+  border-right: 1px solid #e3e3e3;   
+}
+
+#main-navigation ul ul li
+{
+   min-width: 150px;
+}
+
+#main-navigation ul ul li:hover, ul ul a:hover
+{
+  background-color: #ffffff;
+}
+
+#main-navigation ul a
+{
+  padding: 15px 30px;
+  flex-grow: 2;
 }
 
 #main-navigation > ul ul
@@ -47,26 +62,13 @@
   display:none;
 }
 
-#main-navigation ul ul li
-{
-  padding:10px;
-  min-width: 150px;
-}
-
-#main-navigation ul ul li:hover, ul ul a:hover
-{
-  background-color: #ffffff;
-}
-
 #main-navigation ul ul a
 {
-  text-decoration: none;
   color: #595959;
 }
 
 #main-navigation > ul > li > a
-{
-  text-decoration: none;
+{ padding: 15px 10px;
   font-weight: bold;
   font-family: "PT Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -74,10 +76,15 @@
   text-shadow: 1px 1px 0px #fff;
 }
 
-#main-navigation ul li img
+#main-navigation li span
 {
+  background: url('../images/arrow_bullet.png') no-repeat 90% 50%;
   float: right;
-  margin: 5px 0 0 13px; 
+}
+
+#main-navigation li:hover > a span 
+{
+  background: url('../images/arrow_bullet_dark.png') no-repeat 90% 50%;
 }
 
 
@@ -90,9 +97,9 @@
 
 @media screen and (max-width: 770px)
 {
-  #mobile-nav
+  #mobile-nav select
   {
-    display: inline-block;
+    display: block;
     width:100%;
     padding: 5px;
   }

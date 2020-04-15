@@ -8,7 +8,6 @@ const templateData =
         title: "Home",
         link: "#"
       },
-
       {
         title: "Documentation",
         link: "#",
@@ -86,8 +85,7 @@ const templateData =
               {
                 title: "pause",
                 link: ""
-              },
-
+              }
             ]
           },
           {
@@ -97,7 +95,7 @@ const templateData =
               {
                 title: "clear cookies",
                 link: ""
-              },
+              }
             ]
           },
           {
@@ -127,8 +125,7 @@ const templateData =
               {
                 title: "Import-Export",
                 link: ""
-              },
-
+              }
             ]
           }
         ]
@@ -164,30 +161,25 @@ const templateData =
             link: ""
           }
         ]
-        },
-        {
-
+      },
+      {
         title: "What's New",
-        link:"",
-        sub_items:[
-                  {
-                    title: "Version 8.0",
-                    link:"",
-                    sub_items:[]
-                  },
-                  {
-                    title: "Version 6.0",
-                    link:"",
-                    sub_items:[]
-                  },
-                  {
-                    title: "Version 5.0",
-                    link:"",
-                    sub_items:[]
-                  }
+        link: "",
+        sub_items: [
+          {
+            title: "Version 8.0",
+            link: ""
+          },
+          {
+            title: "Version 6.0",
+            link: ""
+          },
+          {
+            title: "Version 5.0",
+            link: ""
+          }
         ]
       }
-       
     ]
   }
 };
