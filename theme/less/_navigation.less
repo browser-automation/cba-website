@@ -7,7 +7,6 @@
 
 #main-navigation > ul
 {
-  //height: 50px;
   display: flex;
   padding: 0;
   border: #F5F5F5 solid  1px;
@@ -36,30 +35,30 @@
 
 #main-navigation ul a
 {
-  padding: 15px 30px;
+  padding: 15px;
   flex-grow: 2;
 }
 
 #main-navigation > ul ul
 {
-  top: 50px;
+  top: 48px;
   display: block;
   position: absolute;
   left: 0;
-  padding: 0px;
+  padding: 0;
   background-color: #f0f0f0;
 }
 
 #main-navigation > ul ul ul
 {
-  left: 99%;
   top: 0;
+  left: 99%;
   margin-left: 1px;
 }
 
 #main-navigation > ul li:not(:hover) > ul
 {
-  display:none;
+  display: none;
 }
 
 #main-navigation ul ul a
@@ -70,19 +69,24 @@
 #main-navigation > ul > li > a
 { padding: 15px 10px;
   font-weight: bold;
-  font-family: "PT Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color:#2883DE;
   text-shadow: 1px 1px 0px #fff;
 }
 
-#main-navigation li span
+#main-navigation .has-children
 {
   background: url('../images/arrow_bullet.png') no-repeat 90% 50%;
   float: right;
+  margin-right: 10px;
 }
 
-#main-navigation li:hover > a span 
+#main-navigation > ul > li:hover > a.has-children
+{
+  background: url('../images/arrow_bullet_dark.png') no-repeat 90% 50%;
+}
+
+#main-navigation ul ul li:hover a.has-children
 {
   background: url('../images/arrow_bullet_dark.png') no-repeat 90% 50%;
 }
@@ -97,7 +101,7 @@
 
 @media screen and (max-width: 770px)
 {
-  #mobile-nav select
+  #mobile-nav
   {
     display: block;
     width:100%;

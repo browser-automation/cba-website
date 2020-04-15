@@ -4,15 +4,14 @@
       <% for ({title, link, sub_items} of navig) { %>
         <li>
             <a href="<%= link %>"><%= title %></a>
-              <% if (sub_items)) {
-                continue;
-                } else { %>
-                  <a href="<%= link %>"><span>&nbsp&nbsp</span></a>
-                  <%recNav(sub_items); }%>       
+              <% if (sub_items) { %>
+                <a class="has-children" href="<%= link %>"></a>
+                  <% recNav(sub_items);
+                } %>       
         </li>
    <% } %>
-</ul>
- <% }
+    </ul>
+<% }
   recNav(site.navigation) %>
 </nav>
 
@@ -22,4 +21,4 @@
     <option value="<%= title %>"><%= title %></option>
   <% } %>
 </select>
-<nav/>
+</nav>
