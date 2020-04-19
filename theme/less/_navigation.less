@@ -28,6 +28,11 @@
    min-width: 150px;
 }
 
+#main-navigation > ul > li:hover
+{
+  background-color: #f0f0f0;
+}
+
 #main-navigation ul ul li:hover, ul ul a:hover
 {
   background-color: #ffffff;
@@ -74,23 +79,36 @@
   text-shadow: 1px 1px 0px #fff;
 }
 
-#main-navigation .has-children
+#main-navigation > ul > li:hover a
 {
-  background: url('../images/arrow_bullet.png') no-repeat 90% 50%;
-  float: right;
-  margin-right: 10px;
+color: #545454;
 }
 
-#main-navigation > ul > li:hover > a.has-children
+#main-navigation > ul > li.has-children > a:after
 {
-  background: url('../images/arrow_bullet_dark.png') no-repeat 90% 50%;
+  content: url('/images/arrow_bullet.png');
+  padding-left: 10px;
 }
 
-#main-navigation ul ul li:hover a.has-children
+#main-navigation ul ul li.has-children > a:after
 {
-  background: url('../images/arrow_bullet_dark.png') no-repeat 90% 50%;
+  content: url('/images/arrow_bullet.png');
+  position: absolute;
+  right: 10px;
 }
 
+#main-navigation > ul > li.has-children > a:hover:after
+{
+  content: url('/images/arrow_bullet_dark.png');
+  padding-left: 10px;
+}
+
+#main-navigation ul ul li.has-children > a:hover:after
+{
+  content: url('/images/arrow_bullet_dark.png');
+  position: absolute;
+  right: 10px;
+}
 
 // Mobile navigation menu
 
