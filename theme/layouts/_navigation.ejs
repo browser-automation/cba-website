@@ -2,22 +2,30 @@
   <% function recNav(navig) { %>
     <ul>
       <% for ({title, link, sub_items} of navig) { %>
-        <li <%- sub_items ? 'class="has-children"' : '' %>>
+        <li <%- sub_items ? "class='has-children'" : "" %>>
           <a href="<%= link %>"><%= title %></a>
             <% if (sub_items) { %>
               <% recNav(sub_items);
-              } %>       
+            } %>
         </li>
-   <% } %>
+      <% } %>
     </ul>
-<% }
+  <% }
   recNav(site.navigation) %>
 </nav>
 
-<nav>
-<select id="mobile-nav">
-  <% for ({title, link, sub_items} of site.navigation) { %>
-    <option value="<%= link %>"><%= title %></option>
-  <% } %>
+<nav id="mobile-nav">
+<select>
+  <% function recMobNav (navig) {
+    for ({title, link, sub_items} of navig) { %>
+      <option value="<%= link %>"><%= title %></option>
+        <% if (sub_items) { %>
+          <optgroup label="<%-title %>">
+          <% recMobNav(sub_items);%>
+          </optgroup>
+        <% } %>
+    <% }
+  }
+  recMobNav(site.navigation) %>
 </select>
 </nav>

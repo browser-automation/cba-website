@@ -164,7 +164,7 @@ const templateData =
       },
       {
         title: "What's New",
-        link: "",
+        link: "#",
         sub_items: [
           {
             title: "Version 8.0",
