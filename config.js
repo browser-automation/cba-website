@@ -154,7 +154,7 @@ const templateData =
       },
       {
         title: "Ready Projects",
-        link: "",
+        link: "#",
         sub_items: [
           {
             title: "FB like/unlike",

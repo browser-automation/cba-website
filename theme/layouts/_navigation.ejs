@@ -16,16 +16,8 @@
 
 <nav id="mobile-nav">
 <select>
-  <% function recMobNav (navig) {
-    for ({title, link, sub_items} of navig) { %>
-      <option value="<%= link %>"><%= title %></option>
-        <% if (sub_items) { %>
-          <optgroup label="<%-title %>">
-          <% recMobNav(sub_items);%>
-          </optgroup>
-        <% } %>
-    <% }
-  }
-  recMobNav(site.navigation) %>
+   <% for ({title, link, sub_items} of site.navigation) { %>
+      <option value="<%- link %>"><%- title %></option>
+    <% } %>
 </select>
 </nav>
