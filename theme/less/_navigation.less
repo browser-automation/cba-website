@@ -83,7 +83,7 @@
 {
   color: #545454;
 }
-
+/*
 #main-navigation > ul > li.has-children > a:after
 {
   content: url('/images/arrow_bullet.png');
@@ -95,14 +95,21 @@
   content: url('/images/arrow_bullet.png');
   position: absolute;
   right: 10px;
-}
+}*/
 
-#main-navigation > ul > li.has-children > a:hover:after, #main-navigation > ul > li.has-children:hover > a:after
+#main-navigation li.has-children > a:after
 {
-  content: url('/images/arrow_bullet_dark.png');
+  content: url('/images/arrow_bullet.png');
+  padding-left: 10px;
 }
 
-#main-navigation ul ul li.has-children > a:hover:after, #main-navigation ul ul li.has-children:hover > a:after
+#main-navigation ul ul li.has-children > a:after
+{
+  position: absolute;
+  right: 10px;
+}
+
+#main-navigation li.has-children:hover > a:after
 {
   content: url('/images/arrow_bullet_dark.png');
 }
