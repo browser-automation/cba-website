@@ -14,18 +14,20 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-#main-navigation > ul li
+#main-navigation li
 { 
-  display: flex;
-  justify-content:space-between;
   position: relative;
   list-style: none;
-  border-right: 1px solid #e3e3e3;   
+}
+
+#main-navigation > ul > li
+{
+  border-right: 1px solid #e3e3e3;
 }
 
 #main-navigation ul ul li
 {
-  min-width: 150px;
+  width: 200px;
 }
 
 #main-navigation > ul > li:hover
@@ -33,22 +35,21 @@
   background-color: #f0f0f0;
 }
 
-#main-navigation ul ul li:hover, ul ul a:hover
+#main-navigation ul ul li:hover
 {
   background-color: #ffffff;
 }
 
-#main-navigation ul a
+#main-navigation li a
 {
+  display: block;
   padding: 15px;
-  flex-grow: 2;
 }
 
 #main-navigation > ul ul
 {
-  top: 48px;
-  display: block;
   position: absolute;
+  top: 48px;
   left: 0;
   padding: 0;
   background-color: #f0f0f0;
@@ -57,8 +58,7 @@
 #main-navigation > ul ul ul
 {
   top: 0;
-  left: 99%;
-  margin-left: 1px;
+  left: 100%;
 }
 
 #main-navigation > ul li:not(:hover) > ul
@@ -73,14 +73,13 @@
 
 #main-navigation > ul > li > a
 { 
-  padding: 15px 10px;
   font-weight: bold;
   font-size: 14px;
   color:#2883DE;
   text-shadow: 1px 1px 0px #fff;
 }
 
-#main-navigation > ul > li:hover a
+#main-navigation > ul > li:hover > a
 {
   color: #545454;
 }
@@ -98,17 +97,14 @@
   right: 10px;
 }
 
-#main-navigation > ul > li.has-children > a:hover:after
+#main-navigation > ul > li.has-children > a:hover:after, #main-navigation > ul > li.has-children:hover > a:after
 {
   content: url('/images/arrow_bullet_dark.png');
-  padding-left: 10px;
 }
 
-#main-navigation ul ul li.has-children > a:hover:after
+#main-navigation ul ul li.has-children > a:hover:after, #main-navigation ul ul li.has-children:hover > a:after
 {
   content: url('/images/arrow_bullet_dark.png');
-  position: absolute;
-  right: 10px;
 }
 
 // Mobile navigation menu
