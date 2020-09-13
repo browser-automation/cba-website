@@ -2,7 +2,7 @@ name: CI tests
 on: push
 jobs:
   test:
-    runs-on: macos-latest
+    runs-on: ubuntu-16.04
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js
