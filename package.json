@@ -1,5 +1,5 @@
 {
-  "name": "cmints-starter-single-lang",
+  "name": "cba-website",
   "version": "1.0.0",
   "description": "Single language website starter for CMintS",
   "main": "index.js",
@@ -15,23 +15,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Manvel/cmints-single-lang-boilerplate.git"
+    "url": "git+https://github.com/browser-automation/cba-website.git"
   },
   "author": "Manvel Saroyan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Manvel/cmints-single-lang-boilerplate/issues"
+    "url": "https://github.com/browser-automation/cba-website/issues"
   },
   "dependencies": {
-    "cmints": "^1.2.2",
+    "cmints": "^1.2.3",
     "markdown-it-imsize": "^2.0.1",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.8"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "prettier": "^2.1.2",
-    "prettylint": "^1.0.0",
-    "stylelint": "^13.3.1",
-    "stylelint-config-recommended": "^3.0.0"
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "prettylint": "^2.0.0",
+    "stylelint": "^16.1.0",
+    "stylelint-config-recommended": "^14.0.0"
   }
 }
