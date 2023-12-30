@@ -6,11 +6,14 @@ edit: documentation/functions/clear-cookies.md
 
 ### Action:
 
-bg-inject
+bg-function
 
 ### Script:
 
-`sendBgInstruction = false; removeCookie("facebook");`
+```
+<$function=removeCookie>
+<$attr=facebook>
+```
 
 ### Description:
 
@@ -18,4 +21,7 @@ The function is designed to clear browser cookie that match corresponding attrib
 
 For example if you will use the attribute mentioned below then CBA will delete all cookies during the project workflow: 
 
-`sendBgInstruction = false; removeCookie(".\*");`
+```
+<$function=removeCookie>
+<$attr=.*>
+```
