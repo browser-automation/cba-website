@@ -38,7 +38,7 @@ new:
   - CBA has been open-sourced.
   - Website has been migrated from slow Drupal instance to blazing fast <a
     href="https://cmints.io/">CMintS</a> website.
-weight: 1
+weight: 10
 edit: releases/beta.md
 ---
 

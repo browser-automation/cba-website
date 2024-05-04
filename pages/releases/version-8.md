@@ -1,7 +1,7 @@
 ---
 title: Version 8.0
 permalink: new_8
-weight: 2
+weight: 3
 edit: releases/version-8.md
 ---
 

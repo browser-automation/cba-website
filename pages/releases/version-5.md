@@ -1,7 +1,7 @@
 ---
 title: Version 5.0
 permalink: new_5
-weight: 5
+weight: 6
 edit: releases/version-5.md
 ---
 
