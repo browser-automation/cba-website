@@ -11,7 +11,6 @@ Starting from [version 10](/new_10-0) CBA is now [MV3 compliant](https://develop
 - Background pages are no more persistence and from time to time the clipboard value may be lost, we will be fixing it with current [issue](https://github.com/browser-automation/cba/issues/119).
 - [cs-inject](/inject-cs) and [inject](/inject) functions now are same, they both are loading scripts into the page Main contextScript.
 
-
 ### bg-inject
 
 Since [Manifest Version 3](https://developer.chrome.com/docs/extensions/develop/migrate/improve-security#remove-execution-of-strings) it's
