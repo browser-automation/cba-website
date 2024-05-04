@@ -1,7 +1,7 @@
 ---
 title: Version 9.0
 permalink: new_9-0
-weight: 1
+weight: 2
 edit: releases/varsion-9.md
 ---
 

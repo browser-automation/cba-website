@@ -1,6 +1,6 @@
 ---
 title: Version 7.0
-weight: 3
+weight: 4
 edit: releases/version-7.md
 ---
 
